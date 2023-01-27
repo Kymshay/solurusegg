@@ -23,7 +23,7 @@
     "config": {
         "files": "{\r\n    \"server.properties\": {\r\n        \"parser\": \"properties\",\r\n        \"find\": {\r\n            \"server-ip\": \"0.0.0.0\",\r\n            \"server-port\": \"{{server.build.default.port}}\"\r\n        }\r\n    }\r\n}",
         "startup": "{\r\n    \"done\": \")! For help, type \",\r\n    \"userInteraction\": [\r\n        \"Go to eula.txt for more info.\"\r\n    ]\r\n},{\r\n    \"done\": \"[Pterodactyl] Ready\"\r\n}",
-        "logs": "{}","{\r\n    \"custom\": false,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
+        "logs": "{\r\n    \"custom\": false,\r\n    \"location\": \"logs\/latest.log\"\r\n}",
         "stop": "stop"
     },
     "scripts": {
@@ -35,8 +35,8 @@
     },
     "variables": [
         {
-            "name": "Minecraft Version",
-            "description": "The version of minecraft to download. \r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "Versión de Minecraft",
+            "description": "La versión de Minecraft a Descargar. \r\n\r\nDeja a \"latest\" para Descargar la última versión. En caso de poner una versión inválida se volverá a \"latest\".",
             "env_variable": "MINECRAFT_VERSION",
             "default_value": "latest",
             "user_viewable": true,
@@ -44,8 +44,8 @@
             "rules": "nullable|string|max:20"
         },
         {
-            "name": "Server Jar File",
-            "description": "The name of the server jarfile to run the server with.",
+            "name": "Archivo Jar del servidor",
+            "description": "El nombre del Archivo .jar para iniciar tu servidor.",
             "env_variable": "SERVER_JARFILE",
             "default_value": "server.jar",
             "user_viewable": true,
@@ -53,8 +53,8 @@
             "rules": "required|string|max:20"
         },
         {
-            "name": "Download Path",
-            "description": "A URL to use to download a server.jar rather than the ones in the install script. This is not user viewable.",
+            "name": "Fuente de descarga",
+            "description": "Una URL para descargar los archivos del servidor y utilizarlo en vez del script. No visible",
             "env_variable": "DL_PATH",
             "default_value": "",
             "user_viewable": false,
@@ -62,8 +62,8 @@
             "rules": "nullable|string"
         },
         {
-            "name": "Build Number",
-            "description": "The build number for the paper release.\r\n\r\nLeave at latest to always get the latest version. Invalid versions will default to latest.",
+            "name": "Número de Build",
+            "description": "El número de Build para descargar el lanzamiento de Paper.\r\n\r\nDeja a latest para descargar la última versión. Las versiones inválidas descargarán la versión reciente.",
             "env_variable": "BUILD_NUMBER",
             "default_value": "latest",
             "user_viewable": true,
@@ -71,8 +71,8 @@
             "rules": "required|string|max:20"
         },
         {
-            "name": "NodeJS",
-            "description": "NodeJS version",
+            "name": "Node.JS",
+            "description": "Versión de Node.JS",
             "env_variable": "NODEJS_VERSION",
             "default_value": "14",
             "user_viewable": true,
