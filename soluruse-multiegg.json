@@ -70,9 +70,7 @@
             "user_editable": false,
             "rules": "required|string|max:20"
         },
-      {
-       
-      {
+        {
             "name": "NodeJS",
             "description": "NodeJS version",
             "env_variable": "NODEJS_VERSION",
