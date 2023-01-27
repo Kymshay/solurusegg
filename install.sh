@@ -19,7 +19,7 @@ $(tput setaf 6)╚══════╝ ╚═════╝ ╚═════
 function forceStuffs {
   curl -O https://soluruse.com/img/logo/logo.png
   
-  echo "motd=Powered by Soluruse | Change this motd in server.properties" >> server.properties
+  echo "motd=Powered by Soluruse | Cambie este motd en server.properties" >> server.properties
 }
 
 function launchJavaServer {
@@ -39,7 +39,7 @@ then
     display
 sleep 5
 echo "
-  $(tput setaf 3)Which platform are you gonna use?
+  $(tput setaf 3)¿Qué plataforma vas a usar??
   1) Paper 1.8.8       6)  1.18.2 
   2) Paper 1.12.2      7)  1.19.2
   3) Paper 1.15.2      8)  BungeeCord
@@ -53,7 +53,7 @@ case $n in
   1) 
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.8.8 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.8.8 por favor espere"
 
     sleep 4
 
@@ -63,7 +63,7 @@ case $n in
 
     display
     
-    echo "$(tput setaf 1)Invalid docker image. Change it to java 8"
+    echo "$(tput setaf 1)Imagen acoplable no válida. cambiarlo a java 8"
     
     sleep 10
     
@@ -76,7 +76,7 @@ case $n in
   2) 
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.12.2 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.12.2 por favor espere"
 
     sleep 4
 
@@ -86,7 +86,7 @@ case $n in
 
     display   
 
-    echo "$(tput setaf 1)Invalid docker image, otherwise it will not work.Change it to java 11"
+    echo "$(tput setaf 1)Imagen docker no válida, de lo contrario no funcionará. Cámbiela a Java 11"
     
     sleep 10
 
@@ -99,7 +99,7 @@ case $n in
   3) 
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.15.2 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.15.2 por favor espere"
 
     sleep 4
 
@@ -109,7 +109,7 @@ case $n in
 
     display   
 
-    echo "$(tput setaf 1)Invalid docker image. Change it to java 16"
+    echo "$(tput setaf 1)Imagen Docker no válida. cambiarlo a java 16"
     
     sleep 10
 
@@ -122,7 +122,7 @@ case $n in
   4)
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.16.5 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.16.5 por favor espere"
 
     sleep 4
 
@@ -132,7 +132,7 @@ case $n in
 
     display
     
-    echo "$(tput setaf 1)Invalid docker image. Change it to java 16"
+    echo "$(tput setaf 1)Imagen Docker no válida. cambiarlo a java 16"
 
     sleep 10
 
@@ -145,7 +145,7 @@ case $n in
   5) 
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.17.1 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.17.1 por favor espere"
 
     sleep 4
 
@@ -166,7 +166,7 @@ case $n in
   6)
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.18.2 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.18.2 por favor espere"
 
     sleep 4
 
@@ -186,7 +186,7 @@ case $n in
   7)
     sleep 1
 
-    echo "$(tput setaf 3)Starting the download for 1.19.2 please wait"
+    echo "$(tput setaf 3)Comenzando la descarga para 1.19.2 por favor espere"
 
     sleep 4
 
@@ -203,7 +203,7 @@ case $n in
     optimizeJavaServer
     launchJavaServer
   8)
-    echo "$(tput setaf 3)Starting Download please wait"
+    echo "$(tput setaf 3)Iniciando descarga por favor espere"
 
     curl -O https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
 
@@ -212,7 +212,7 @@ case $n in
     java -Xms512M -Xmx512M -jar BungeeCord.jar
   ;;
   9)
-  echo "$(tput setaf 3)Starting Download please wait"
+  echo "$(tput setaf 3)Iniciando descarga por favor espere"
   
   curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash -
   
