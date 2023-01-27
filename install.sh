@@ -202,6 +202,7 @@ case $n in
 
     optimizeJavaServer
     launchJavaServer
+  ;;
   8)
     echo "$(tput setaf 3)Iniciando descarga por favor espere"
 
