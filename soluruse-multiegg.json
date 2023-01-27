@@ -6,7 +6,7 @@
     },
     "exported_at": "2023-01-27T012:11:54+05:30",
     "name": "MultiEgg",
-    "author": "Kymshay",
+    "author": "kymshay@soluruse.com",
     "description": "Soluruse-multiegg",
     "images": [
         "quay.io\/pterodactyl\/core:java_17",
